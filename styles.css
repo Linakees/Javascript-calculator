@@ -1,0 +1,272 @@
+/* GENERAL */
+
+body{
+    background-color: #827397;
+    font-family: 'Alfa Slab One', serif;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.author{
+    font-size: 20px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blankspace{
+    width: 200px;
+    height: 70px;
+    font-size: 50px; 
+    text-align: center;
+}
+
+#answer{
+    width: 99%;
+    padding: 16px 0;
+    font-size: 30px;
+    text-align: end;
+    background-color: #443C68;
+    color: white;
+}
+
+#answer:focus{
+    outline: none !important;
+}
+
+.calculator{
+    background-color: #393053;
+    width: 850px;
+    height: 480px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* BUTTONS */
+
+button {
+    background-color: #635985;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    width: 200px;
+    height: 70px;
+    box-shadow: 0px 2px 21px -2px rgba(0,0,0,0.8);
+}
+
+button:hover{
+    background-color: #786c9e;
+}
+
+button:active {
+    background-color: #635985;
+    box-shadow: 0 3px #66666638;
+    transform: scale(0.93); 
+
+}
+
+#Enter{
+    width: 400px;
+    height: 70px;
+    background-color: #E9D5DA;
+    color: black;
+}
+
+#Enter:hover{
+    background-color: #f1e4e7;
+}
+
+.operation {
+    background-color: #A2678A;
+}
+
+.percent {
+    background-color:#A2678A;
+}
+
+.operation:hover {
+    background-color: #c387ab;
+}
+
+.percent:hover {
+    background-color:#c387ab;
+}
+
+.cButton{
+    width: 100px;
+    height: 70px;
+    background-color: #E9D5DA;
+    color: black;
+}
+
+.ceButton{
+    width: 100px;
+    height: 70px;
+    background-color: #E9D5DA;
+    color: black;
+}
+
+.cButton:active{
+    padding: 14px 18px;
+    background-color: rgb(170, 224, 206);
+    color: black;
+}
+
+.ceButton:active{
+    padding: 14px 15px;
+    background-color: rgb(170, 224, 206);
+    color: black;
+}
+
+.cButton:hover{
+    background-color: #f1e4e7;
+}
+
+.ceButton:hover{
+    background-color: #f1e4e7;
+}
+
+.pressed {
+    background-color: rgb(47, 46, 48);
+    box-shadow: 0 3px #66666638;
+    transform: scale(0.93); 
+}
+
+footer{
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* @medias */
+/* TABLET */
+
+@media screen 
+and (min-width: 819px) 
+and (max-width: 950px)   {
+
+    button {
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+
+    #Enter{
+        width: 300px;
+        height: 50px;
+    }
+
+    .cButton{
+        width: 75px;
+        height: 50px;
+    }
+    
+    .ceButton{
+        width: 75px;
+        height: 50px;
+    }
+
+    #answer{
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    .blankspace{
+        width: 150px;
+        height: 50px;
+        font-size: 30px; 
+    }    
+
+    .calculator{
+        width: 650px;
+        height: 350px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .author{
+        font-size: 15px;
+    }
+
+  }
+
+  /* PHONE */
+
+  @media screen 
+and (min-width: 280px) 
+and (max-width: 819px)  {
+
+    button {
+        font-size: 15px;
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    #Enter{
+        width: 160px;
+        height: 40px;
+    }
+
+    .cButton{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .ceButton{
+        width: 40px;
+        height: 40px;
+    }
+
+    #answer{
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    .blankspace{
+        width: 80px;
+        height: 40px;
+        font-size: 15px; 
+    }    
+
+    .calculator{
+        width: 360px;
+        height: 280px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    .author{
+        font-size: 10px;
+    }
+
+
+}
